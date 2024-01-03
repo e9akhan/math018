@@ -1,9 +1,17 @@
 import solver
 
 
+NUM = """
+3
+7 4
+2 4 6
+8 5 9 3
+"""
+
+
 def is_solved():
-    assert not solver.solver()
+    assert solver.solver()
 
 
 def test_solver():
-    assert solver.solver() == 42
+    assert solver.solver(NUM) == 23
